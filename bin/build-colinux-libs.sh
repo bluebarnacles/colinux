@@ -18,7 +18,7 @@ download_files()
 {
 	download_file "$FLTK_ARCHIVE" "$FLTK_URL"
 	test "$COLINUX_HOST_ARCH" = "x86_64" || \
-	download_file "$W32API_SRC_ARCHIVE" "$MINGW_URL"
+	download_file "$W32API_SRC_ARCHIVE" "$MINGW_W32API_URL"
 	download_file "$WINPCAP_SRC_ARCHIVE" "$WINPCAP_URL"
 	test "$COLINUX_ENABLE_WX" = "yes" && \
 	download_file "$WX_ARCHIVE" "$WX_URL"

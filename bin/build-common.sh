@@ -68,7 +68,7 @@ TARGET_GUEST_ARCH=x86_64
 # These are the files from the current MingW release
 
 MINGW_VERSION="3.14"
-MINGW_URL=http://heanet.dl.sourceforge.net/sourceforge/mingw
+MINGW_ARCHIVE_URL=https://sourceforge.net/projects/mingw/files/OldFiles/mingw-runtime-$MINGW_VERSION
 MINGW=mingw-runtime-$MINGW_VERSION
 MINGW_ARCHIVE=$MINGW.tar.gz
 
@@ -91,6 +91,7 @@ GCC_URL=ftp://ftp.gnu.org/pub/gnu/gcc/gcc-$GCC_VERSION
 #GCC_PATCH="patch/$GCC.diff"
 
 W32API_VERSION=3.13
+MINGW_W32API_URL=https://sourceforge.net/projects/mingw/files/OldFiles/w32api-$W32API_VERSION
 W32API=w32api-$W32API_VERSION-mingw32
 W32API_SRC=$W32API
 W32API_SRC_ARCHIVE=$W32API-src.tar.gz
