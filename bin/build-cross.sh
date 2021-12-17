@@ -34,7 +34,7 @@ download64()
 
 	# Prebuild GCC MinGW for Linux (43M download, 227M used)
 	test -f $DOWNLOADS/$MINGW_PACK || \
-	 wget $MINGW_PACK_URL -O $DOWNLOADS/$MINGW_PACK
+	 wget -c $MINGW_PACK_URL -O $DOWNLOADS/$MINGW_PACK
 }
 
 unpack64()
