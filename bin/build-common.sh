@@ -92,7 +92,7 @@ W32API_ARCHIVE=$W32API-dev.tar.gz
 
 
 FLTK_VERSION="1.1.6"
-FLTK_URL=http://heanet.dl.sourceforge.net/sourceforge/fltk 
+FLTK_URL=https://sourceforge.net/projects/fltk/files/FLTK/$FLTK_VERSION
 FLTK=fltk-$FLTK_VERSION
 FLTK_ARCHIVE=$FLTK-source.tar.bz2
 FLTK_PATCH="patch/$FLTK-win32.diff"
@@ -125,7 +125,7 @@ fi
 KERNEL_DIR=`echo $KERNEL_VERSION | sed -e 's/^\([0-9]*\.[0-9]*\)\..*$/v\1/'`
 
 KERNEL=linux-$KERNEL_VERSION
-KERNEL_URL=http://www.kernel.org/pub/linux/kernel/$KERNEL_DIR
+KERNEL_URL=http://ftp.dei.uc.pt/pub/linux/kernel/$KERNEL_DIR
 KERNEL_ARCHIVE=$KERNEL.tar.bz2
 
 CO_VERSION=`cat $TOPDIR/src/colinux/VERSION`
